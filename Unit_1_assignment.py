@@ -4,88 +4,90 @@ import turtle
 turtle.speed(0)
 turtle.pensize(1)
 
-def makeAhexagon(color):
+
+def make_hexagon(color):
     turtle.color(color)
     for x in range(6):
         turtle.forward(50)
         turtle.left(60)
 
-def makeAoctagon(size, color):
+
+def make_octagon(size, color):
     turtle.color(color)
     for x in range(8):
         turtle.forward(size)
         turtle.left(45)
 
-def makeAsquare(size, color):
+
+def make_square(size, color):
     turtle.color(color)
     for x in range(4):
         turtle.forward(size)
         turtle.left(90)
 
+
+def goto(x, y):
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+
+
 # rotating hexagon in a circle
-for y in range(18):
-    makeAhexagon("violet")
+for z in range(18):
+    make_hexagon("violet")
     turtle.left(20)
 
 # rotating octagon in a circle
 for z in range(18):
-    makeAoctagon(50, "medium slate blue")
+    make_octagon(50, "medium slate blue")
     turtle.left(20)
 
-turtle.penup()
-turtle.goto(200, 200)
-turtle.pendown()
+goto(200, 200)
 
 # rotating oxagon in a circle
-for y in range(8):
-    makeAoctagon(50, "pink")
+for z in range(8):
+    make_octagon(50, "pink")
     turtle.left(45)
 
 # rotating hexagon in a circle
 for z in range(8):
-    makeAhexagon("light blue")
+    make_hexagon("light blue")
     turtle.left(45)
 
-turtle.penup()
-turtle.goto(-200, 200)
-turtle.pendown()
+goto(-200, 200)
 
 # rotating oxtagon in a circle
-for y in range(10):
-    makeAoctagon(50, "sky blue")
+for z in range(10):
+    make_octagon(50, "sky blue")
     turtle.left(36)
 
 # rotating hexagon in a circle
 for z in range(10):
-    makeAhexagon("royal blue")
+    make_hexagon("royal blue")
     turtle.left(36)
 
-turtle.penup()
-turtle.goto(-200, -200)
-turtle.pendown()
+goto(-200, -200)
 
 # rotating square in a circle
-for y in range(10):
-    makeAsquare(50, "cyan")
+for z in range(10):
+    make_square(50, "cyan")
     turtle.left(36)
 
 # rotating hexagon in a circle
 for z in range(10):
-    makeAhexagon("powder blue")
+    make_hexagon("powder blue")
     turtle.left(36)
 
-turtle.penup()
-turtle.goto(200, -200)
-turtle.pendown()
+goto(200, -200)
 
 # rotating square in a circle
-for y in range(18):
-    makeAsquare(80, "misty rose")
+for z in range(18):
+    make_square(80, "misty rose")
     turtle.left(20)
 
 # rotating hexagon in a circle
 for z in range(10):
-    makeAoctagon(40, "lavender")
+    make_octagon(40, "lavender")
     turtle.left(36)
 
 
