@@ -1,17 +1,20 @@
 import turtle
 turtle.speed(0)
 
-#triangle
+turtle.pencolor("purple")
+
+# triangle
 for x in range(3):
     turtle.forward(100)
     turtle.left(120)
 
 turtle.penup()
 turtle.forward(150)
-turtle.pencolor("purple")
 turtle.pendown()
 
-#square
+turtle.pencolor("cyan")
+
+# square
 for x in range(4):
     turtle.forward(100)
     turtle.left(90)
@@ -21,7 +24,7 @@ turtle.back(300)
 turtle.pencolor("blue")
 turtle.pendown()
 
-#pentagon
+# pentagon
 for x in range(5):
     turtle.forward(100)
     turtle.left(72)
@@ -38,7 +41,7 @@ turtle.back(150)
 turtle.pencolor("orange")
 turtle.pendown()
 
-#star
+# star
 for x in range(5):
     turtle.forward(100)
     turtle.right(144)
@@ -48,7 +51,7 @@ turtle.left(50)
 turtle.forward(300)
 turtle.pendown()
 
-#rotating square
+# rotating square
 for y in range(3):
     for x in range(4):
         turtle.fd(100)
@@ -60,11 +63,12 @@ turtle.right(110)
 turtle.forward(150)
 turtle.pendown()
 
-#neighborhood of houses
+
+# neighborhood of houses
 def draw_house():
 
-    #triangle roof of house
-    turtle.color("blue")
+    # triangle roof of house
+    turtle.color("light blue")
     turtle.begin_fill()
     for x in range(3):
         turtle.forward(100)
@@ -75,13 +79,14 @@ def draw_house():
     turtle.right(90)
     turtle.pendown()
 
-    #square of house
-    turtle.color("purple")
+    # square of house
+    turtle.color("violet")
     turtle.begin_fill()
     for x in range(4):
         turtle.forward(100)
         turtle.left(90)
     turtle.end_fill()
+
 
 draw_house()
 
